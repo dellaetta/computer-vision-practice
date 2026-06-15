@@ -10,7 +10,8 @@ deactivate
 
 ## Directory
 ### Chapter 2: Getting to know OpenCV
-- hello_world.py: Introduction to OpenCV. Takes a picture and write Hello World on it. 
+- hello_world.py: Takes a picture and write Hello World on it
+- live_cam.py: Live camera that shows coordinates and rgb
 
 ### Chapter 3: Image sources
 - live_cam.py: Live camera that shows coordinates and rgb
