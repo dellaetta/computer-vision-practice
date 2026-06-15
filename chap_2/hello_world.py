@@ -9,7 +9,7 @@ for _ in range(3):
 
 if ret:
         # ?, text, position (x,y), font scale, color, thickness
-        cv2.putText(frame, "Hello World!", (50, 100), cv2.FONT_HERSHEY_SIMPLEX, 2, (199,21,133), 3) 
+        cv2.putText(frame, "Hello World!", (50, 100), cv2.FONT_HERSHEY_SCRIPT_SIMPLEX, 2, (199,21,133), 3) 
         cv2.imshow("Display", frame)
         cv2.waitKey(10000)
 else:
