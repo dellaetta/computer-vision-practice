@@ -43,5 +43,7 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
+print("Window closed")
+
 cam.release()
 cv2.destroyAllWindows()
