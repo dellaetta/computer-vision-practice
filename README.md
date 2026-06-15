@@ -12,6 +12,8 @@ deactivate
 ### Chapter 2: Getting to know OpenCV
 - hello_world.py: Takes a picture and write Hello World on it
 - live_cam.py: Live camera that shows coordinates and rgb
+- time_lapse.py: Takes 10 photos a second apart and saves them to photos/time_lapse
+- photo_booth.py: Saves photo to photos/photo_booth every time window is left-clicked
 
 ### Chapter 3: Image sources
 - live_cam.py: Live camera that shows coordinates and rgb
