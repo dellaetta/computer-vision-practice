@@ -16,4 +16,7 @@ deactivate
 - photo_booth.py: Saves photo to photos/photo_booth every time window is left-clicked
 
 ### Chapter 3: Image sources
-- live_cam.py: Live camera that shows coordinates and rgb
+- img_set.py: Create an image sets
+- kinect_seg.py: Use kinect data to seperate person from background
+- kinect dataset: https://www.kaggle.com/datasets/bmanikan/rgbd-peoples-dataset 
+    - attempted to use https://www.kaggle.com/datasets/hosseinmousavi/small-home-objects-sho-image-dataset/data, but depth and color were different sizes
