@@ -9,15 +9,19 @@ if img is None:
     sys.exit()
 
 h,w = img.shape[:2]
-shift = 35
+shear_x = 0.12
 
-src = np.float32([[0, 0], [w, 0], [w, h], [0, h]])
-dst = np.float32([[0, 0], [w, 0], [w + shift, h], [0 + shift, h]])
-
-warp = cv2.getPerspectiveTransform(src, dst)
-img = cv2.warpPerspective(img, warp, (w, h))
+shear = np.float32([[1, shear_x, 0], [0, 1, 0]])
+img = cv2.warpAffine(img, shear, (w, h))
 
 cv2.imshow("Display", img) 
 
 cv2.waitKey(10000)
 cv2.destroyAllWindows()
+
+"""
+Notes
+- Applies affine transform (shear)
+-   x_new = x_old + shear_x ⋅ y_old
+    y_new = y_old
+"""
