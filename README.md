@@ -20,3 +20,6 @@ deactivate
 - kinect_seg.py: Use kinect data to seperate person from background
 - kinect dataset: https://www.kaggle.com/datasets/bmanikan/rgbd-peoples-dataset 
     - attempted to use https://www.kaggle.com/datasets/hosseinmousavi/small-home-objects-sho-image-dataset/data, but depth and color were different sizes
+
+### Chapter 4: Pixels and Images
+- pisa.py: Playing around with warping by straighting the leaning tower of pisa
