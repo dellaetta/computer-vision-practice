@@ -3,57 +3,48 @@ import logging
 import sys
 import numpy as np
 
+# read in image
 tv = cv2.imread("dataset/tv.jpg")
 if tv is None:
     logging.error(" Image not found")
     sys.exit()
-w,h = tv.shape[:2]
 
+# set up coordinates for tv
+h, w = tv.shape[:2]
 src = np.float32([[0, 0], [w, 0], [w, h], [0, h]])
-tv_coor = np.float32([[221, 130], [341, 130], [341, 202], [212, 208]])
-h,w = tv.shape[:2]
+tv_coor = np.float32([[182, 242], [459, 250], [460, 479], [182, 497]])
 
-mask = np.ones((h, w), dtype=np.uint8) * 255
+# prep warp
 M = cv2.getPerspectiveTransform(src, tv_coor)
-mask = cv2.warpPerspective(mask, M, (w, h))
 
-cv2.imshow("Display", mask)
+# create mask that is white where live image should be
+mask = np.zeros((h, w), dtype=np.uint8)
+cv2.fillPoly(mask, [tv_coor.astype(np.int32)], 255)
 
-cv2.waitKey(10000)
-cv2.destroyAllWindows()
-
-
-""" 
-mouse_x, mouse_y = 0, 0
-clicked_x, clicked_y = None, 0
-current_frame = None
-WINDOW = "Display"
-
-def mouse_callback(event, x, y, flags, param):
-    global mouse_x, mouse_y
-    global clicked_x, clicked_y
-
-    mouse_x, mouse_y = x, y
-    if event == cv2.EVENT_LBUTTONDOWN:
-        clicked_x, clicked_y = x, y
-    
-
-cv2.namedWindow(WINDOW)
-cv2.setMouseCallback(WINDOW, mouse_callback)
+cam = cv2.VideoCapture(0)
+disp = "Display"
 
 while True:
-    frame = tv.copy()
-    cv2.putText(frame, f"mouse: ({mouse_x}, {mouse_y})", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2)
-    cv2.putText(frame, f"clicked: ({clicked_x if clicked_x != None else 0}, {clicked_y})", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2)
+    # get image from webcam
+    ret, frame = cam.read()
+    if not ret:
+        logging.error("Live image not captured")
+        break
+    
+    # warp live feed into tv
+    frame = cv2.flip(frame, 1)
+    frame = cv2.resize(frame, (w, h))
+    frame = cv2.warpPerspective(frame, M, (w,h))
 
-    cv2.imshow(WINDOW, frame)
+    # add tv background
+    result = tv.copy()
+    result[mask == 255] = frame[mask == 255]   
+
+    cv2.imshow(disp, result)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 print("Window closed")
-
-#cv2.waitKey(10000)
 cv2.destroyAllWindows()
 
-"""

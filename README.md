@@ -18,8 +18,12 @@ deactivate
 ### Chapter 3: Image sources
 - img_set.py: Create an image sets
 - kinect_seg.py: Use kinect data to seperate person from background
-- kinect dataset: https://www.kaggle.com/datasets/bmanikan/rgbd-peoples-dataset 
+- dataset: 
+    - images from: https://www.kaggle.com/datasets/bmanikan/rgbd-peoples-dataset 
     - attempted to use https://www.kaggle.com/datasets/hosseinmousavi/small-home-objects-sho-image-dataset/data, but depth and color were different sizes
 
 ### Chapter 4: Pixels and Images
-- pisa.py: Playing around with warping by straighting the leaning tower of pisa
+- pisa.py: Playing around with shearing by straighting the leaning tower of pisa
+- dataset:
+    - pisa.jpg source: https://stock.adobe.com/search?k=leaning+tower+pisa
+    - tv.jpg source: https://www.istockphoto.com/search/2/image-film?phrase=old+tv+side+view&tracked_gsrp_landing=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fold-tv-side-view 
