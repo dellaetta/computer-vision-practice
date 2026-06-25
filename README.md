@@ -35,3 +35,7 @@ deactivate
     - parking_lot.jpg: https://www.wesh.com/article/backing-out-of-a-parking-space-made-easy/61803367
 
 ### Chapter 6: Image Arithmetic
+- motion_det.py: Detect motion of plant growing
+- hist.py: Create a histogram of the colors in a grayscale image
+- dataset
+    - plant_one.png and plant_two.png: https://www.youtube.com/watch?v=w77zPAtVTuI 

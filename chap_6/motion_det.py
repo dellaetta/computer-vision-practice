@@ -1,7 +1,6 @@
 import cv2
 import logging
 import sys
-import numpy as np
 
 def detect_motion(img_one, img_two):
     img_diff = cv2.absdiff(img_one, img_two)
