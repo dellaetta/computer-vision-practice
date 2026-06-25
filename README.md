@@ -30,6 +30,6 @@ deactivate
     - tv.jpg source: https://www.istockphoto.com/search/2/image-film?phrase=old+tv+side+view&tracked_gsrp_landing=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fold-tv-side-view 
 
 ### Chapter 5: The impact of light
-- car.py: Detect if car is in parking spot
+- car.py: Detect if there is a green car in the image
 - dataset
     - parking_lot.jpg: https://www.wesh.com/article/backing-out-of-a-parking-space-made-easy/61803367
