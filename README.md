@@ -33,3 +33,5 @@ deactivate
 - car.py: Detect if there is a green car in the image
 - dataset
     - parking_lot.jpg: https://www.wesh.com/article/backing-out-of-a-parking-space-made-easy/61803367
+
+### Chapter 6: Image Arithmetic
