@@ -29,7 +29,7 @@ deactivate
     - pisa.jpg source: https://stock.adobe.com/search?k=leaning+tower+pisa
     - tv.jpg source: https://www.istockphoto.com/search/2/image-film?phrase=old+tv+side+view&tracked_gsrp_landing=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fold-tv-side-view 
 
-### Chapter 5: The impact of light
+### Chapter 5: The Impact of Light
 - car.py: Detect if there is a green car in the image
 - dataset
     - parking_lot.jpg: https://www.wesh.com/article/backing-out-of-a-parking-space-made-easy/61803367
@@ -42,3 +42,6 @@ deactivate
 - dataset
     - plant_one.png and plant_two.png: https://www.youtube.com/watch?v=w77zPAtVTuI 
     - pigeon.jpg: https://www.pexels.com/search/pigeon/ 
+
+### Chapter 7: Drawing on Images
+- stop_go.py
