@@ -38,5 +38,7 @@ deactivate
 - motion_det.py: Detect motion of plant growing
 - hist.py: Create a histogram of the colors in a grayscale image
 - blur.py: Add timelapse effect to live cam
+- green_screen.py: Add pigeon to desired colors
 - dataset
     - plant_one.png and plant_two.png: https://www.youtube.com/watch?v=w77zPAtVTuI 
+    - pigeon.jpg: https://www.pexels.com/search/pigeon/ 

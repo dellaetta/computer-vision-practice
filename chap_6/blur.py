@@ -8,6 +8,7 @@ frame_weight = 0.2
 ret, last_img = cam.read()
 if not ret:
     logging.error(" Live image not captured")
+    sys.exit()
 
 while True:
     ret, frame = cam.read()
