@@ -44,4 +44,4 @@ deactivate
     - pigeon.jpg: https://www.pexels.com/search/pigeon/ 
 
 ### Chapter 7: Drawing on Images
-- stop_go.py
+- stop_go.py: Display stop sign when flashlight shown

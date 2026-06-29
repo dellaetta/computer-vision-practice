@@ -35,7 +35,7 @@ while True:
     frame = cv2.flip(frame, 1)
     dist = cv2.absdiff(frame, bgcolor)
     dist = cv2.cvtColor(dist, cv2.COLOR_BGR2GRAY)
-    mask = cv2.cvtColor(((dist > 75).astype(np.uint8) * 255), cv2.COLOR_GRAY2BGR)
+    mask = cv2.cvtColor(((dist > 50).astype(np.uint8) * 255), cv2.COLOR_GRAY2BGR)
 
     # get shirt
     bg = cv2.subtract(img, mask)
