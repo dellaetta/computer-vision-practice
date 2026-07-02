@@ -47,6 +47,12 @@ deactivate
 - stop_go.py: Display stop sign when flashlight shown
 
 ### Chapter 8: Basic Feature Detection
-- stop_go.py: Display stop sign when flashlight shown
+- coin_counter.py: Display the value of the coins in an image
 - dataset:
     - coins.png: https://www.reddit.com/r/mildlyinteresting/comments/1c59lha/this_the_least_amount_of_coins_you_need_to_carry/
+
+### Chapter 9: FeatureSet Manipulation
+- tracker.py: Track an x as it moves across the screen
+
+### Chapter 10: Advanced Features
+- tracker.py: Track an x as it moves across the screen
