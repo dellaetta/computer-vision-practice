@@ -45,3 +45,8 @@ deactivate
 
 ### Chapter 7: Drawing on Images
 - stop_go.py: Display stop sign when flashlight shown
+
+### Chapter 8: Basic Feature Detection
+- stop_go.py: Display stop sign when flashlight shown
+- dataset:
+    - coins.png: https://www.reddit.com/r/mildlyinteresting/comments/1c59lha/this_the_least_amount_of_coins_you_need_to_carry/
